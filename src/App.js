@@ -1,4 +1,8 @@
 import React from 'react'
+import './CSS/layout.css';
+import './CSS/minireset.min.css';
+
+import CardList from './Components/CardList';
 
 const productBacklog = [
 	{
@@ -112,8 +116,7 @@ const listOfCards = [
 
 export default function App() {
     return (
-        <div>
-            <h1>My React App</h1>
-        </div>
+        <CardList cards={listOfCards} />
     )
-}
+	}
+
